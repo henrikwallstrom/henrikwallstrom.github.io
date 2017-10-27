@@ -10,7 +10,7 @@ categories: ansible powershell iis windows
 
 We use [Ansible](http://www.ansible.com/) at [Waulter](http://www.waulter.com) to automate our infrastructure. We also host our servers on Azure and use IIS on Windows as our application/web server. Unfortunately, there was no support for IIS in Ansible out of the box.
 
-So, during a my Christmas vacation I decided to fix that by writing modules to manage IIS `web sites`, `web applications`, `virtual directories`, `application pools` and `web bindings`. 
+So, during my Christmas vacation I decided to fix that by writing modules to manage IIS `web sites`, `web applications`, `virtual directories`, `application pools` and `web bindings`. 
 
 They are now part of Ansible and can be found in the [module index](http://docs.ansible.com/ansible/latest/list_of_windows_modules.html):
 
