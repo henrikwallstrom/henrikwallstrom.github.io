@@ -8,7 +8,7 @@ categories: fsharp health
 
 _![Rest HR zones by day]({{ site.url }}/images/healthdata_experiments/rest-hr-percent.png)_
 
-If some doctor by luck read this, please check if the above is healthy. It is <span class='yellow-highlight'> time spent in each heart rate zone per day during the last 3 months</span>. I've filtered away sleep and exercise to have it include only resting heart rates. 
+If some doctor by luck read this, please check if the above is healthy. It is <span class='yellow-highlight'> time spent in each heart rate zone per day during the last 3 months</span>. I've filtered out sleep and exercise to have it include only resting heart rates. 
 
 ## Health Data
 Apple Health App is recording my heart rate, steps, workouts, stand hours, sleep etc. All data can easily be [exported](https://www.google.com/search?q=export+apple+health+data) as a zipped xml-file.
