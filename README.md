@@ -1,8 +1,20 @@
-## Install Jekyl
-`gem install bundler jekyll`
+## Site
+This repo is a minimal Eleventy-based static site.
 
-## Install missing dependencies
-`bundle install`
+## Setup
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Run Jekyl
-`bundle exec jekyll serve`
+2. Run locally:
+   ```bash
+   npm run dev
+   ```
+
+3. Build production output:
+   ```bash
+   npm run build
+   ```
+
+The generated site will be in `_site`.
