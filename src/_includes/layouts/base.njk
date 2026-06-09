@@ -6,6 +6,7 @@
     <title>{{ title }} | {{ site.title }}</title>
     <meta name="description" content="{{ description or site.description }}" />
     <meta name="color-scheme" content="light" />
+    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="{{ site.title }}" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -13,14 +14,19 @@
   <body>
     <div class="page">
       <header class="site-header">
-        <a class="site-title" href="/">{{ site.title }}</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a class="site-title" href="/">{{ site.title }}</a>
+          <div class="site-links">
+            <a href="/">Posts</a>
+          </div>
+        </nav>
         <p class="site-tagline">{{ site.description }}</p>
       </header>
       <main>
         {{ content | safe }}
       </main>
       <footer class="site-footer">
-        <p>© {{ "" | year }} {{ site.title }}.</p>
+        <p>© {{ "" | year }} {{ site.title }}. <a href="/feed.xml">RSS</a></p>
       </footer>
     </div>
   </body>

@@ -9,4 +9,22 @@ layout: layouts/base.njk
   <div class="post-content">
     {{ content | safe }}
   </div>
+  {% set previous = collections.posts | previousPost(page.url) %}
+  {% set next = collections.posts | nextPost(page.url) %}
+  {% if previous or next %}
+    <nav class="post-nav" aria-label="Post navigation">
+      {% if previous %}
+        <a class="post-nav-link" href="{{ previous.url }}">
+          <span>Previous</span>
+          {{ previous.data.title }}
+        </a>
+      {% endif %}
+      {% if next %}
+        <a class="post-nav-link" href="{{ next.url }}">
+          <span>Next</span>
+          {{ next.data.title }}
+        </a>
+      {% endif %}
+    </nav>
+  {% endif %}
 </article>
