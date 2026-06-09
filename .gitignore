@@ -1,13 +1,5 @@
-_site
-node_modules
-.npm
-.sass-cache
+_site/
+node_modules/
+
 .DS_Store
-.jekyll-metadata
-
-# Ignore the config file that's used for gh-pages.
-_config.gh-pages.yml
-
-vendor
-
-Gemfile.lock
+.npm/
